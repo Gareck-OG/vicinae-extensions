@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/vicinaehq/vicinae/refs/heads/main/extra/schemas/extension.json",
   "name": "wifi-commander",
   "title": "Wifi Commander",
-  "description": "Complete wifi management - toggle wifi and scan networks using nmcli",
+  "description": "Complete Wi‑Fi management for Vicinae: toggle Wi‑Fi, restart services, scan and connect to networks, and manage saved connections using nmcli or iwctl.",
   "categories": [
     "System"
   ],

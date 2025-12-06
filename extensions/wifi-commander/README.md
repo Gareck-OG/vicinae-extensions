@@ -5,25 +5,25 @@ A comprehensive Wi‑Fi management extension for Vicinae that provides complete 
 ## Features
 
 ### Core Actions
-- **Turn Wi‑Fi On/Off**: Quick toggles for Wi‑Fi radio
+- **Turn Wi‑Fi On/Off**: Quick toggles for the Wi‑Fi radio
 - **Restart Wi‑Fi**: Restart Wi‑Fi services to resolve connection issues
-- **Disconnect**: Disconnect from current network
+- **Disconnect**: Disconnect from the currently connected network
 
 ### Network Scanning
 - **Scan Available Networks**: Discover all nearby Wi‑Fi networks
-- **Smart Connection**: Automatically detects saved networks and connects without password prompt
-- **Hidden Connection**: Gives to option to connect to hidden Networks [just `iwclt`]
-- **Password Protection**: Secure password form for new networks
+- **Smart Connection**: Automatically detects saved networks and connects without prompting again for the password
+- **Hidden Networks**: Option to connect to hidden networks *(iwctl only)*
+- **Password Protection**: Secure password form for new or unsaved networks
 - **Signal Strength**: Visual indicators for network quality
 - **Security Info**: Display security type (WPA2, WEP, etc.)
 
 ### Saved Network Management
 - **View Saved Networks**: List all previously connected networks
 - **Smart Actions**: Primary action adapts based on network availability
-  - **Disconnect**: When network is currently available
-  - **Connect**: When network is currently available
-  - **Forget**: When network is not available
-  - **Toggel Auto Connection**: For every Network
+  - **Disconnect**: When the network is currently connected
+  - **Connect**: When the network is available but not connected
+  - **Forget**: When the network is no longer needed
+  - **Toggle Auto‑Connect**: Enable or disable auto‑connect per network *(iwctl only)*
 - **Connection Status**: Visual indicators for connected networks
 - **Quick Access**: Connect to saved networks without scanning
 
@@ -71,7 +71,7 @@ pnpm dev
 ### Network Discovery
 1. Open `Scan Wifi Networks`
 2. Browse available networks with signal strength
-3. Connect to open networks or enter password for secured ones
+3. Connect to open networks or enter a password for secured ones
 4. Connected networks are automatically saved
 
 ### Managing Saved Networks
@@ -96,7 +96,7 @@ pnpm dev
 - `Cmd+C`: Copy network name
 - `Cmd+Shift+C`: Copy UUID
 - `Cmd+R`: Refresh network list
-- `Cmd+A`: Toggle Auto Connect [just `iwclt`]
+- `Cmd+A`: Toggle auto‑connect *(iwctl only)*
 
 ## Technical Details
 
